@@ -115,8 +115,7 @@ ABOUT
 */
 #about {
   padding: 30px 0;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
-  min-height: 940px;
+  min-height: 840px;
 }
 .row{
   display: flex;
@@ -129,8 +128,14 @@ ABOUT
 }
 
 .col-1 img {
+  filter: grayscale(100%);
   width: 100%;
   border-radius: 25px;
+  transition: 0.3s;
+}
+
+.col-1 img:hover {
+  filter: grayscale(0%);
 }
 
 .col-2 {
@@ -202,7 +207,6 @@ ACHIEVMENTS
 */
 #achievements {
   padding: 30px 0;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
   min-height: 940px;
 }
 #achievements .sub-title{
@@ -253,7 +257,44 @@ ACHIEVMENTS
 .achievement:hover .achievement-info {
   height: 100%;
 }
+/*
 
+FUN FACT
 
+*/
+#fun-fact {
+  padding: 30px 0;
+}
+.fun-fact-list {
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+}
+.fun-fact-item {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  background-color: rgba(0, 0, 22, 0.9);
+  border-radius: 10px;
+  padding: 20px 10px;
+}
 
+.fun-fact-item .icon {
+  display: flex;
+  background-color: white;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.fun-fact-item .text {
+  padding: 0 16px;
+}
+
+.fun-fact-item .text p{
+  padding: 4px 0;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
 
