@@ -24,8 +24,16 @@ function triggerTab(tabName) {
   document.getElementById(tabName+"-link").classList.add("active");
 }
 
-function goToBottomPage() {
-  window.scrollTo(0, document.body.scrollHeight);
+function seeMore(tabName){
+  var targetTab;
+  targetTab = document.getElementById(tabName);
+
+  if (targetTab.classList.contains("active")) {
+    targetTab.classList.remove("active");
+    return;
+  }
+
+  targetTab.classList.add("active");
 }
 
 let sections = document.querySelectorAll("section");
