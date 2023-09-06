@@ -12,7 +12,7 @@ body{
 .container{
   padding: 10px 10%;
 }
-.sub-title {
+h1.sub-title{
   font-size: 60px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -26,14 +26,6 @@ a.nav-link:visited,
 a.nav-link:hover,
 a.nav-link:active {
   color: rgb(0, 150, 255);
-}
-.arrow-down {
-  border: solid rgb(0, 150, 255);
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
 }
 .paragraph {
   text-align: justify;
@@ -326,3 +318,108 @@ FUN FACT
   text-justify: inter-word;
 }
 
+/*
+
+CONTACT
+
+*/
+#contact {
+  padding: 30px 0;
+  min-height: 830px;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+#contact .sub-title{
+  font-weight: 600;
+  padding-bottom: 50px;
+  display: flex;
+}
+.contact-info{
+  flex-basis: 35%;
+}
+.contact-item{
+  font-size: 14px;
+  padding-bottom: 10px;
+  display: flex;
+}
+.contact-item i{
+  color: rgb(0, 150, 255);
+  padding: 0 16px;
+}
+.socials {
+  padding-left: 10px;
+}
+.socials i {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 150, 255);
+  border-radius: 50%;
+  margin-left: 2px;
+  font-size: 24px;
+  padding: 5px;
+}
+.form-group {
+  flex-basis: 65%;
+}
+.field {
+  width: 100%;
+  display: flex;
+  margin: 16px;
+  height: 50px;
+}
+.field i {
+  position: absolute;
+  color: rgb(34, 34, 34);
+  padding: 0 16px;
+  transform: translateY(16px);
+  pointer-events: none;
+}
+form input,
+form textarea{
+  position: relative;
+  border-radius: 5px;
+  padding-right: 16px;
+  padding-left: 36px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  border: 1px solid rgb(34, 34, 34);
+  background-color: rgba(146, 161, 176, 0.3);
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus{
+  border-color: rgb(0, 150, 255);
+}
+.field input:focus ~ i,
+.field textarea:focus ~ i {
+  color: rgb(0, 150, 255);
+}
+
+form textarea{
+  resize: none;
+  padding-top: 14px;
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+button.send {
+  transform: translateX(16px);
+  background-color: rgb(0, 150, 255);
+  border: none;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+
+button.send:hover {
+  background-color: rgb(0, 150, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+button.send:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
