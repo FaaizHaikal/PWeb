@@ -50,9 +50,9 @@
               when I graduate.
             </p>
             <div class="tab">
-              <p class="tab-links" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-              <p class="tab-links" onclick="opentab('work-experience')">Work Experience</p>
+              <p class="tab-links" id="skills-link" onclick="triggerTab('skills')">Skills</p>
+              <p class="tab-links" id="education-link" onclick="triggerTab('education')">Education</p>
+              <p class="tab-links" id="work-experience-link" onclick="triggerTab('work-experience')">Work Experience</p>
             </div>
             <div class="tab-contents" id="skills">
               <div class="bar">
@@ -132,6 +132,9 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="see-more">
+          <button>Read more <br><i class='arrow-down'></i></button>
         </div>
       </div>
     </section>
@@ -280,6 +283,9 @@
                 budget-friendly choice for my needs. It's a one-stop-shop for great deals.</p>
             </div>
           </div>
+        </div>
+        <div class="see-more">
+          <button onclick="triggerTab('3-youtube-videos')">Read more <br><i class='arrow-down'></i></button>
         </div>
       </div>
     </section>

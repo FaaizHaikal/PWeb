@@ -1,17 +1,17 @@
-function opentab(tabName) {
+function triggerTab(tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tab-contents");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    tabcontent[i].classList.remove("active");
   }
   
   tablinks = document.getElementsByClassName("tab-links");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active","");
+    tablinks[i].classList.remove("active");
   }
   
-  document.getElementById(tabName).style.display = "block";
-  event.currentTarget.className += " active";
+  document.getElementById(tabName).classList.add("active");
+  document.getElementById(tabName+"-link").classList.add("active");
 }
 
 let sections = document.querySelectorAll("section");

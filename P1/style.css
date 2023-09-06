@@ -27,10 +27,39 @@ a.nav-link:hover,
 a.nav-link:active {
   color: rgb(0, 150, 255);
 }
-
+.arrow-down {
+  border: solid rgb(0, 150, 255);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 .paragraph {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.see-more {
+  padding: 50px;
+  text-align: center;
+}
+.see-more button {
+  background: none;
+  color: rgba(0, 150, 255, 1);
+  transition: 0.3s;
+  padding: 16px 32px;
+  font-size: 15px;
+  border-radius: 30px;
+  border-color: rgba(0, 150, 255, 1);
+}
+.see-more button:hover,
+.see-more button:focus{
+  box-shadow: 0 6px 20px rgb(41, 0, 255);
+  color: rgb(255, 255, 255);
+  border-color:  rgb(41, 0, 255);
+  transform: translateY(-8px);
+  cursor: pointer;
 }
 /* 
 
@@ -173,7 +202,6 @@ ABOUT
 }
 
 .bar {
-  margin-bottom: 15px;
   padding: 10px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
