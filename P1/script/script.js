@@ -24,6 +24,21 @@ function triggerTab(tabName) {
   document.getElementById(tabName+"-link").classList.add("active");
 }
 
+function bubbleAnimation() {
+  const bubbles = document.getElementById("bubbles");
+
+  for (let i = 0; i < 50; i++) {
+    const bubble = document.createElement("span");
+
+    const randomVal = Math.floor(Math.random() * 90) + 10;
+    bubble.setAttribute('style', `--i:${randomVal};`);
+
+    bubbles.appendChild(bubble);
+  }
+}
+
+bubbleAnimation();
+
 function seeMore(tabName){
   var targetTab;
   targetTab = document.getElementById(tabName);
@@ -35,6 +50,8 @@ function seeMore(tabName){
 
   targetTab.classList.add("active");
 }
+
+
 
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
