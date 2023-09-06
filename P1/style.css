@@ -68,32 +68,36 @@ header{
   z-index: 1000;
   width: 100%;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
-  justify-content: flex-end;
+  justify-content: space-between;
   display: flex;
   align-items: center;
   padding: 10px 10%;
   background-color: rgb(20,20,20);
 }
 
-header .navbar ul li{
+header img {
+  width: 140px;
+}
+
+nav ul li{
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
-header .navbar ul li a{
+nav ul li a{
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 18px;
   position: relative;
   transition: 0.3s;
 }
-header .navbar ul li a.active{
+nav ul li a.active{
   color: rgb(0, 150, 255);
   padding: 9px 25px;
   background-color: rgb(43, 43, 43);
   border-radius: 50px;
 }
-header .navbar ul li a:hover{
+nav ul li a:hover{
   padding: 9px 25px;
   background-color: rgb(43, 43, 43);
   border-radius: 50px;
@@ -324,20 +328,11 @@ FUN FACT
 }
 #see-more-fun-fact{
   margin-top: 50px;
-  height: 0px;
-  -webkit-transition: height 0.5s linear;
-     -moz-transition: height 0.5s linear;
-      -ms-transition: height 0.5s linear;
-       -o-transition: height 0.5s linear;
-          transition: height 0.5s linear;
+  transition: 3s;
+  display: none;
 }
 #see-more-fun-fact.active{
-  height: 100%;
-  -webkit-transition: height 0.5s linear;
-     -moz-transition: height 0.5s linear;
-      -ms-transition: height 0.5s linear;
-       -o-transition: height 0.5s linear;
-          transition: height 0.5s linear;
+  display: block;
 }
 .three-youtube-videos{
   display: grid;
