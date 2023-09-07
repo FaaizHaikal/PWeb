@@ -51,6 +51,13 @@ function seeMore(tabName){
   targetTab.classList.add("active");
 }
 
+function openSideMenu() {
+  document.getElementById("side-menu").style.right = "0px";
+}
+
+function closeSideMenu() {
+  document.getElementById("side-menu").style.right = "-200px";
+}
 
 
 let sections = document.querySelectorAll("section");

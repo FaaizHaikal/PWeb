@@ -485,3 +485,43 @@ button.send:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+/*
+
+MEDIA RESPONSIVENES
+
+*/
+nav .fa-solid{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  nav .fa-solid{
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  nav ul {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    margin: 25px;
+    display: block;
+  }
+  nav ul .fa-solid{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+}
