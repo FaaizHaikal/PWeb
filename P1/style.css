@@ -133,42 +133,33 @@ nav ul li a:hover{
   background-color: rgb(43, 43, 43);
   border-radius: 50px;
 }
-
 /* 
 
 HOME
  
 */
 .home {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  max-height: 100%;
-  align-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/home-background2.png);
+  background-size: cover;
 }
 .home .introduction {
-  flex: 1 1 640px;
   padding: 0px 256px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
   font-size: 32px;
   z-index: 1;
 }
-
-.home .background {
-  flex: 1 1 640px;
-  z-index: 1;
-}
-.home .background img {
-  width: 100%;
-  max-height: 100%;
-}
-.home #particles-js {
+/* .home #particles-js {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-}
+} */
 /* 
 
 ABOUT
@@ -523,5 +514,36 @@ nav .fa-solid{
     font-size: 22px;
     color: rgb(255, 255, 255);
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1500px){
+  .fun-fact-list {
+    grid-template-columns: auto;
+  }
+  .fun-fact-item {
+    grid-template-columns: 7% 93%;
+  }
+}
+@media only screen and (max-width: 900px){
+  .fun-fact-item{
+    grid-template-columns: 15% 75%;
+  }
+}
+@media only screen and (max-width: 700px){
+  .fun-fact-item{
+    grid-template-columns: 20% 80%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .fun-fact-item{
+    grid-template-columns: 30% 70%;
+  }
+  .fun-fact-item .icon{
+  }
+}
+@media only screen and (max-width: 500px){
+  .fun-fact-item{
+    grid-template-columns: 35% 65%;
   }
 }
