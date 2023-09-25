@@ -1,3 +1,7 @@
+@import url(
+  https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700,500,400italic,500italic,700italic,300italic
+);
+
 body{
   background-color: #212529;
 }
@@ -84,6 +88,37 @@ p{
   font-size: 1.5rem;
 }
 
+#top-websites{
+  padding: 50px 75px;
+  min-height: 100vh;
+}
+i{
+  color: #212529;
+}
+
+.visit-web-button{
+  margin-top: 10px;
+}
+.visit-web{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  font-weight:100;
+  text-align: center;
+  padding: 5px 40px;
+  border: 1px solid #212529;
+  color: #212529;
+  text-decoration: none;
+  transition: all 0.5s;
+  border-radius: 20px;
+}
+
+.visit-web:hover{
+  background-color: #212529;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
 @media only screen and (max-width: 576px){
   .navbar-brand{
     transform: translateX(20px);
@@ -102,6 +137,6 @@ p{
     max-height: 75%;
   }
   .home-information{
-    padding: 0;
+    padding: 0 5%;
   }
 }

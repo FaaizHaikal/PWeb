@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5f60200bd3.js" crossorigin="anonymous"></script>
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <section id="header" class="container-fluid">
@@ -42,59 +43,213 @@
     </section>
 
     <section id="top-websites" class="container-fluid">
+      <h2>Top Websites</h2>
+
       <div class="row">
         <div class="col-sm-6">
-          <h2>Top Websites</h2>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="https://www.spotify.com" target="_blank">Spotify</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://chat.openai.com" target="_blank">ChatGPT</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://web.whatsapp.com" target="_blank">WhatsApp Web</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.notion.so" target="_blank">Notion</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://shopee.co.id" target="_blank">Shopee</a></li>
-          </ul>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-youtube fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  Youtube
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  I like YouTube for it's endless variety of content video. 
+                  It's my go-to platform for entertainment and learning.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://www.youtube.com" target="_blank">
+                      Visit Youtube
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-github fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                  Github
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  GitHub is the best platform for developers for it's version control. 
+                  It's ease of use and robust tools make coding projects more efficient and enjoyable!
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://www.github.com" target="_blank">
+                      Visit Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseThree">
+                  Instagram
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Instagram made me able to connect with friends through captivating photos and videos. 
+                  It's a creative and social platform that keeps me inspired and connected.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://www.instagram.com" target="_blank">
+                      Visit Instagram
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-google fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseFour">
+                  Google
+                </a>
+              </div>
+              <div id="collapseFour" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Google is one of my favorite for its powerful search and versatile services. 
+                  It simplifies my online experience.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://www.google.com" target="_blank">
+                      Visit Google
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-stack-overflow fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseFive">
+                  Stack Overflow
+                </a>
+              </div>
+              <div id="collapseFive" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  I love Stack Overflow for it's reliable solutions to coding challenges with 
+                  dev-community always ready to help. It helps a lot in my programming journey.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://www.stackoverflow.com" target="_blank">
+                      Visit Stack Overflow
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-spotify fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseSix">
+                  Spotify
+                </a>
+              </div>
+              <div id="collapseSix" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Spotify is my go-to for listening music because it is easy to 
+                  discover and enjoy a wide range of tunes. It's the soundtrack to my life.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://www.spotify.com" target="_blank">
+                      Visit Spotify
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseSeven">
+                  LinkedIn
+                </a>
+              </div>
+              <div id="collapseSeven" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  I like LinkedIn because I can build my personal brand there. Additionally, I can 
+                  view other people's sources of courses or knowledge, which allows me to learn 
+                  from them as well.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://www.linkedin.com" target="_blank">
+                      Visit LinkedIn
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseEight">
+                  WhatsApp Web
+                </a>
+              </div>
+              <div id="collapseEight" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  I enjoy WhatsApp Web for it's seamless and convenient way to access and 
+                  use WhatsApp on my computer. It keeps me connected effortlessly.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://web.whatsapp.com" target="_blank">
+                      Visit Web WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-discord fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseNine">
+                  Discord
+                </a>
+              </div>
+              <div id="collapseNine" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  I enjoy using Discord because it provides a platform for connecting with like-minded 
+                  individuals and communities, fostering meaningful discussions and collaboration.
+                  It also offers a seamless way to share and explore various interests, from gaming 
+                  to hobbies, enhancing my online social experience.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://discord.com" target="_blank">
+                      Visit Discord
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fa-brands fa-pinterest fa-2xl"></i>
+                <a class="btn" data-bs-toggle="collapse" href="#collapseTen">
+                  Pinterest
+                </a>
+              </div>
+              <div id="collapseTen" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  I find Pinterest valuable for its vast collection of hairstyle and outfit style references, 
+                  making it a fantastic resource for inspiration and fashion ideas.
+                  <div class="visit-web-button">
+                    <a class="visit-web" href="https://id.pinterest.com" target="_blank">
+                      Visit Pinterest
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-</html>
 
-  <!-- <nav class="navbar navbar-expand-* justify-content-center bg-dark">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a href="https://www.spotify.com" target="_blank">Spotify</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://web.whatsapp.com" target="_blank">WhatsApp Web</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://www.notion.so" target="_blank">Notion</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://shopee.co.id" target="_blank">Shopee</a>
-      </li>
-    </ul>
-  </nav> -->
-  <!-- <nav class="navbar justify-content-center bg-dark">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="https://www.youtube.com" target="_blank">Youtube</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.github.com" target="_blank">Github</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.google.com" target="_blank">Google</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.stackoverflow" target="_blank">Stack Overflow</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </li>
-      </ul>
-  </nav> -->
-  <script src="./script/script.js"></script>
-</body>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
