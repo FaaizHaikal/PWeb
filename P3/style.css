@@ -90,7 +90,6 @@ p{
 
 #top-websites{
   padding: 50px 75px;
-  min-height: 100vh;
 }
 i{
   color: #212529;
@@ -118,6 +117,13 @@ i{
   text-decoration: none;
 }
 
+#my-work{
+  padding: 50px 75px;
+}
+
+#my-work iframe{
+  border-radius: 10px;
+}
 
 @media only screen and (max-width: 576px){
   .navbar-brand{
