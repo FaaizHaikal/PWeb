@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WittyWord</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="custom-container logo">
+    <h1>WittyWord</h1>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center sticky-top">
+    <div class="custom-container">
+      <div class="col">
+        <div class="col-sm-4">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link me-5 text-nowrap active" id="All">All News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5 text-nowrap" id="World">World</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5 text-nowrap" id="Weather">Weather</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5 text-nowrap" id="Economy">Economy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5 text-nowrap" id="Health">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5 text-nowrap" id="Tech&Media">Tech & Media</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <div class="custom-container">
+    <div class="row">
+      <div class="col-xl-10">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators" id="indicators-carousel">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          </div>
+          <div class="carousel-inner" id="inner-carousel">
+            <div class="carousel-item active">
+              <a href="https://www.nbcnews.com/news/world/israels-iron-dome-never-important-fends-hamas-attacks-rcna119782"
+                target="_blank">
+                <img
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-860x484,f_auto,q_auto:best/rockcms/2023-10/231010-iron-dome-mjf-1550-8be907.jpg"
+                  alt="Los Angeles" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                  <h3>Why Israel's 'Iron Dome' has never been more important</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-xl-2 latest-news">
+        <div class="decoration" style="margin-bottom: 10px;"></div>
+        <h3>Latest News</h3>
+        <ul>
+          <a target="_blank" href="https://www.nbcnews.com/health/health-news/gaza-hospitals-airstrikes-children-supplies-power-rcna119877">
+            <li>
+              <p>25m ago <br><span class="text-dark">Gaza hospitals face a 'tsunami of wounded' as supplies and power run out</span></p>
+            </li>
+          </a>
+          <a target="_blank" href="https://www.nbcnews.com/news/investigations/hamas-know-group-deadliest-attack-israel-decades-rcna119628">
+            <li>
+              <p>6h ago <br><span class="text-dark">War between Israel and Hamas sparks heated debate on college campuses</span></p>
+            </li>
+          </a>
+          <a target="_blank" href="https://www.nbcnews.com/news/us-news/war-rages-israel-hamas-debate-heats-americas-colleges-rcna120012">
+            <li>
+              <p>2d ago <br><span class="text-dark">A history of the Gaza strip</span></p>
+            </li>
+          </a>
+          <a target="_blank" href="https://www.nbcnews.com/news/investigations/hamas-know-group-deadliest-attack-israel-decades-rcna119628">
+            <li>
+              <p>2d ago <br><span class="text-dark">Hamas group explained: Here's what to know about the group behind the deadly attack in Israel</span></p>
+            </li>
+          </a>
+        </ul>
+        <div class="decoration"></div>
+      </div>
+    </div>
+
+    <div class="custom-container">
+      <div id="articles">
+        <div class="row">
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article World">
+            <a href="https://www.nbcnews.com/news/world/israels-iron-dome-never-important-fends-hamas-attacks-rcna119782"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-860x484,f_auto,q_auto:best/rockcms/2023-10/231010-iron-dome-mjf-1550-8be907.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Why Israel's 'Iron Dome' has never been more important</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article World">
+            <a href="https://www.nbcnews.com/news/latino/argentina-wildfires-spur-evacuations-central-cordoba-province-rcna119875"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231011-fire-argentina-jm-0837-f17a75.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Argentina wildfires spur evacuations in central Cordoba province</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Tech&Media">
+            <a href="https://www.nbcnews.com/tech/mrbeast-ai-tiktok-ad-deepfake-rcna118596">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231003-mr-beast-scam-mjf-1246-8de400.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>MrBeast calls TikTok ad showing an AI version of him a 'scam'</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article World">
+            <a href="https://www.nbcnews.com/data-graphics/floods-greece-fires-climate-change-visualized-rcna118810"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231004-greece-floods-fire-mn-1450-0295d1.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Two months of fire and flood: Greece's climate disasters, visualized</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Economy">
+            <a href="https://www.nbcnews.com/business/economy/inflation-grocery-cost-store-data-chart-rcna92030"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-260x130,f_auto,q_auto:best/rockcms/2023-07/20230712-egg-price-2x1-nc-a4e5be.png"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Inflation is easing. What does that mean for your grocery bill?</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Tech&Media">
+            <a href="https://www.nbcnews.com/tech/social-media/tiktok-shop-teens-high-school-open-how-to-make-money-long-deliver-us-rcna102788"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-09/230925-tiktok-marketplace-teens-lr-14b31b.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Teens are selling products on TikTok Shop between classes</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Health">
+            <a href="https://www.nbcnews.com/health/health-news/-death-survivors-describe-saw-heard-reviving-rcna117511"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-09/230929-neardeath-ksp-main-ef1dfa.png"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>5 cardiac arrest survivors describe their pre-revival experience</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Health">
+            <a href="https://www.nbcnews.com/health/health-news/even-short-term-exposure-air-pollution-may-raise-risk-stroke-study-fin-rcna117673"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-06/230607-people-walking-new-york-wildfire-smog-ew-349p-8dee16.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Even short-term exposure to air pollution may raise risk of stroke</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Weather">
+            <a href="https://www.nbcnews.com/news/weather/hurricane-nigel-strengthens-gaining-category-2-status-far-land-atlanti-rcna107965"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-09/230920-hurricane-nigel-mb-1355-06e3b6.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Hurricane Nigel intensifies into a powerful Category 2 storm</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Economy">
+            <a href="https://www.nbcnews.com/business/business-news/us-added-187000-jobs-august-was-expected-rcna102946"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-260x130,f_auto,q_auto:best/rockcms/2023-09/230901-construction-fule-mb-1341-a72ffb.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>U.S. economy added 187,000 jobs in August, more than was expected</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Economy">
+            <a href="https://www.nbcnews.com/nightly-news/video/recession-fears-easing-as-dueling-economic-narratives-take-hold-189853253528"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-260x130,f_auto,q_auto:best/mpx/2704722219/2023_08/1691018111152_nn_tco_recession_fears_easing_us_credit_downgraded_230802_1920x1080-aayb3n.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Recession fears easing as dueling economic narratives take hold</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Tech&Media">
+            <a href="https://www.nbcnews.com/tech/tech-news/sec-sues-force-elon-musk-testify-twitter-probe-rcna119108"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231005-elon-musk-se-433p-f8b0ed.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>SEC sues to legally compel Elon Musk to testify in Twitter probe</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Weather">
+            <a href="https://www.nbcnews.com/science/environment/antarctic-winter-sea-ice-hits-extreme-record-low-rcna117372"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-260x130,f_auto,q_auto:best/rockcms/2023-09/230926-penguins-antarctica-mn-1045-db96b4.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Antarctic winter sea ice hits 'extreme' all-time record low</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article World">
+            <a href="https://www.nbcnews.com/news/world/indonesia-move-capital-sinking-jakarta-borneo-n1046651"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2019_35/2986146/190827-jakarta-water-levels-mc-902.JPG"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Indonesia to move capital from sinking Jakarta to Borneo</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Weather">
+            <a href="https://www.nbcnews.com/science/environment/rains-pelt-pacific-northwest-maybe-end-wildfire-season-rcna117242"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-09/230925-noaa-pnw-rain-jm-1404-8edb90.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Rain pelts Pacific Northwest — may end wildfire season</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Health">
+            <a href="https://www.nbcnews.com/health/heart-health/good-hdl-cholesterol-dementia-risk-rcna118772"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-260x130,f_auto,q_auto:best/rockcms/2023-03/230303-blood-vials-lab-tech-2008-ac-453p-c8cc2c.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>'Good' cholesterol levels may increase dementia risk</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Economy">
+            <a href="https://www.nbcnews.com/business/economy/savings-simulator-money-beating-inflation-rcna92034"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231006-high-yield-savings-v2-lr-b3a43a.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>Savings simulator: Is your money beating inflation?</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 article Tech&Media">
+            <a href="https://www.nbcnews.com/tech/tech-news/chatgpt-can-now-speak-listen-process-images-openai-says-rcna117227"
+              target="_blank">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-01/230131-open-ai-se-624p-35f3c4.jpg"
+                  alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>ChatGPT can now 'speak', listen and process images</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/script.js">
+      //   const topics = document.getElementsByClassName("World")
+      // console.log(topics)
+    </script>
+</body>
+
+</html>
