@@ -360,36 +360,6 @@
       </div>
     </div>
   </div>
-
-
     <script src="script.js"></script>
-    <script>
-    $(document).ready(function () {
-        $("#search").on("keyup", function () {
-          var searchValue = $(this).val().toLowerCase();
-          
-          $(".article").each(function () {
-              var articleTitle = $(this).find(".card-title h6").text().toLowerCase();
-              if (articleTitle.includes(searchValue)) {
-                  $(this).show();
-              } else {
-                  $(this).hide();
-              }
-          });
-        });
-    });
-
-    $(document).ready(function() {
-    var navbar = $(".navbar");
-
-    $(window).on("scroll", function() {
-        if (window.scrollY > 0) {
-            navbar.addClass("bg-light");
-        } else {
-            navbar.removeClass("bg-light");
-        }
-    });
-});
-    </script>
 </body>
 </html>

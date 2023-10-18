@@ -28,7 +28,7 @@ function updateContent(contentTopicName) {
   for (article of articles) {
     if (article.classList.contains(contentTopicName)) {
       article.classList.remove("hidden");
-      showArticleInView(article);
+      article.classList.add("show");
     }
   }
 }
@@ -164,7 +164,7 @@ function showArticleInView(article) {
 
 function isElementInView(element) {
   const rect = element.getBoundingClientRect();
-  const compensation = 100;
+  const compensation = 0;
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -174,15 +174,6 @@ function isElementInView(element) {
   );
 }
 function showElementInView() {
-
-  const searchBar = document.getElementsByClassName("search-bar")[0];
-
-  if (isElementInView(searchBar)) {
-    searchBar.classList.add("show");
-  } else {
-    searchBar.classList.remove("show");
-  }
-
   const articles = document.getElementsByClassName("article");
 
   for (article of articles) {
@@ -196,4 +187,33 @@ function showElementInView() {
 }
 
 showElementInView();
+
+$(document).ready(function () {
+  $("#search").on("keyup", function () {
+    var searchValue = $(this).val().toLowerCase();
+    
+    $(".article").each(function () {
+        var articleTitle = $(this).find(".card-title h6").text().toLowerCase();
+        if (articleTitle.includes(searchValue)) {
+          this.classList.remove("hidden");
+          this.classList.add("show");
+        } else {
+          this.classList.add("hidden");
+          this.classList.remove("show");
+        }
+    });
+  });
+});
+
+$(document).ready(function() {
+  var navbar = $(".navbar");
+
+  $(window).on("scroll", function() {
+      if (window.scrollY > 0) {
+          navbar.addClass("bg-light");
+      } else {
+          navbar.removeClass("bg-light");
+      }
+  });
+});
 
