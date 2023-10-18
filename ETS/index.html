@@ -17,31 +17,31 @@
   </div>
   <nav class="navbar navbar-expand-lg justify-content-center sticky-top">
     <div class="custom-container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link me-5 text-nowrap active" id="All">All</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-5 text-nowrap" id="NumTheory">Number Theory</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-5 text-nowrap" id="Algebra">Algebra</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-5 text-nowrap" id="Geometry">Geometry</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-5 text-nowrap" id="Combinatorics">Combinatorics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-5 text-nowrap" id="Applications">Applications</a>
-            </li>
-          </ul>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link me-5 text-nowrap active" id="All">All</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-5 text-nowrap" id="NumTheory">Number Theory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-5 text-nowrap" id="Algebra">Algebra</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-5 text-nowrap" id="Geometry">Geometry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-5 text-nowrap" id="Combinatorics">Combinatorics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-5 text-nowrap" id="Applications">Applications</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div id="bubbles"></div>
@@ -366,16 +366,16 @@
     <script>
     $(document).ready(function () {
         $("#search").on("keyup", function () {
-            var searchValue = $(this).val().toLowerCase();
-            
-            $(".article").each(function () {
-                var articleTitle = $(this).find(".card-title h6").text().toLowerCase();
-                if (articleTitle.includes(searchValue)) {
-                    $(this).show();
-                } else {
-                    $(this).hide();
-                }
-            });
+          var searchValue = $(this).val().toLowerCase();
+          
+          $(".article").each(function () {
+              var articleTitle = $(this).find(".card-title h6").text().toLowerCase();
+              if (articleTitle.includes(searchValue)) {
+                  $(this).show();
+              } else {
+                  $(this).hide();
+              }
+          });
         });
     });
 

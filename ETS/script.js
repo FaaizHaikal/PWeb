@@ -1,4 +1,3 @@
-
 const navLinks = document.querySelectorAll(".nav-link");
 
 navLinks.forEach((link) => {
@@ -13,21 +12,23 @@ navLinks.forEach((link) => {
 });
 
 function updateContent(contentTopicName) {
-
   const articles = document.getElementsByClassName("article");
+  for (article of articles) {
+    article.classList.remove("show");
+    article.classList.add("hidden");
+  }
+
   if (contentTopicName === "All") {
     for (article of articles) {
       article.classList.remove("hidden");
-      article.classList.add("show")
+      showArticleInView(article);
     }
     return;
   }
   for (article of articles) {
     if (article.classList.contains(contentTopicName)) {
       article.classList.remove("hidden");
-    }
-    else {
-      article.classList.add("hidden");
+      showArticleInView(article);
     }
   }
 }
@@ -150,14 +151,49 @@ function bubbleAnimation() {
 setBubblesCount();
 bubbleAnimation();
 
-// window.addEventListener('scroll', followingBubbles);
+window.addEventListener('scroll', showElementInView);
+window.addEventListener('resize', showElementInView);
 
-// function followingBubbles() {
-//   const bubbles = document.getElementById("bubbles");
-//   const bubblesPosition = bubbles.getBoundingClientRect();
-//   if (bubblesPosition.top < 0) {
-//     bubbles.style.position = "fixed";
-//   } else {
-//     bubbles.style.position = "absolute";
-//   }
-// }
+function showArticleInView(article) {
+  if (isElementInView(article)) {
+    article.classList.add("show");
+  } else {
+    article.classList.remove("show");
+  }
+}
+
+function isElementInView(element) {
+  const rect = element.getBoundingClientRect();
+  const compensation = 100;
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+    (window.innerHeight || document.documentElement.clientHeight) + compensation &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+function showElementInView() {
+
+  const searchBar = document.getElementsByClassName("search-bar")[0];
+
+  if (isElementInView(searchBar)) {
+    searchBar.classList.add("show");
+  } else {
+    searchBar.classList.remove("show");
+  }
+
+  const articles = document.getElementsByClassName("article");
+
+  for (article of articles) {
+    if (isElementInView(article)) {
+      article.classList.add("show");
+    } else {
+      article.classList.remove("show");
+    }
+  }
+
+}
+
+showElementInView();
+

@@ -13,6 +13,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  opacity: 0;
+  transform: translateX(100px);
+}
+.search-bar.show{
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s, transform 0.5s;
 }
 .form-control{
   width: 50% !important;
@@ -29,6 +36,9 @@
   box-shadow: 0 2px 0 0 red !important;
 }
 .navbar-nav{
+  .d-flex{
+    width: 100% !important;
+  }
   .nav-item{
     text-align: center;
   }
@@ -88,7 +98,7 @@ nav .navbar-toggler{
 }
 .carousel-item img {
   width: 100%;
-  height: 550px;
+  height: 450px;
   object-fit: scale-down;
 }
 
@@ -142,6 +152,16 @@ nav .navbar-toggler{
     opacity: 0.5;
   }
 }
+.article{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s, transform 1s;
+}
+.article.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .card-img-top{
   height: 150px;
   object-fit: cover;
