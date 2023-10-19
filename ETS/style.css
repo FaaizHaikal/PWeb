@@ -218,3 +218,9 @@ nav .navbar-toggler{
     height: 250px;
   }
 }
+
+@media only screen and (max-height: 420px) {
+  .card-img-top{
+    height: 150px;
+  }
+}

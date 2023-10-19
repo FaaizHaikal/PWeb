@@ -164,12 +164,17 @@ function showArticleInView(article) {
 
 function isElementInView(element) {
   const rect = element.getBoundingClientRect();
-  const compensation = 0;
+  const windowHeight = window.innerHeight;
+  if (windowHeight < 600) {
+    compensation = 350;
+  } else {
+    compensation = 100;
+  }
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
     rect.bottom <=
-    (window.innerHeight || document.documentElement.clientHeight) + compensation &&
+    (windowHeight || document.documentElement.clientHeight) + compensation &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
