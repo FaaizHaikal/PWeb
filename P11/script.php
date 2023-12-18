@@ -1,5 +1,5 @@
 <?php
-  $connect = mysqli_connect("localhost", "root", "", "articles");
+  $connect = mysqli_connect("localhost", "kulp3765_5025221219", "R4h4si4kit4", "kulp3765_5025221219");
   if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     die();

@@ -82,6 +82,6 @@
     5025221219, Faa'iz Haikal Hilmi <br>
     Dosen: Imam Kuswardayan, S.Kom, M.T
   </footer>
-    <script src="script.js.php"></script>
+    <script src="script.php"></script>
 </body>
 </html>
